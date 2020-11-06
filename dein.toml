@@ -1,0 +1,29 @@
+[[plugins]] repo = 'Shougo/context_filetype.vim'
+
+[[plugins]]
+repo = 'Shougo/deoplete.nvim'
+depends = 'context_filetype.vim'
+on_event = 'InsertEnter'
+hook_add = '''
+let g:deoplete#enable_at_startup = 1
+let g:deoplete#custom#var = 1
+'''
+
+[[plugins]]
+repo = 'scrooloose/nerdtree'
+
+[[plugins]]
+repo = 'cohama/lexima.vim'
+
+[[plugins]]
+repo = 'zchee/deoplete-clang'
+on_ft = 'cpp'
+depends = 'deoplete.nvim'
+hook_add = """
+let g:deoplete#sources#clang#libclang_path='/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libclang.dylib'
+let g:deoplete#sources#clang#clang_header='/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang'
+"""
+
+[[plugins]]
+repo = 'thinca/vim-quickrun'
+
