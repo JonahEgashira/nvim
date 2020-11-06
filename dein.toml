@@ -27,3 +27,8 @@ let g:deoplete#sources#clang#clang_header='/Applications/Xcode.app/Contents/Deve
 [[plugins]]
 repo = 'thinca/vim-quickrun'
 
+[[plugins]] # カラースキーマ
+repo = 'altercation/vim-colors-solarized'
+hook_add = '''
+  set background=light
+'''

@@ -38,6 +38,7 @@ endif
 
 
 " My configuration
+"
 set number
 set tabstop=2
 set shiftwidth=2
