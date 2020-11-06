@@ -45,8 +45,12 @@ set cursorline
 set clipboard+=unnamed
 set title
 
+syntax on
+set t_Co=256
 highlight Pmenu ctermbg=7 ctermfg=0
 highlight PmenuSel ctermbg=0 ctermfg=230
+highlight MatchParen cterm=bold ctermbg=none ctermfg=blue
+
 
 " Easy NerdTree
 nnoremap <silent><C-e> :NERDTreeToggle<CR>
